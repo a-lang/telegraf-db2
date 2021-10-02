@@ -21,14 +21,14 @@ For DB2 Client, you also need to upload bin/*.sh into the HOME directory of the 
 
 For Telegraf, you have to configure your Telegraf by referring to the file `telegraf-db2.conf`.
 
-In my cause, I have 2 Telegraf instances running the host, one is default, the other is for DB2client.
+In my case, I have 2 Telegraf instances running the host, one is default, the other is for DB2client.
 
 Therefore, I created 2 separated config files for Telegraf and systemd.
 
 - /etc/telegraf/telegraf-db2.conf
 - /etc/systemd/system/telegraf-db2.service
 
-Start the Telegrafservice
+Start the Telegraf service
 
 ```shell
 systemctl start telegraf-db2
